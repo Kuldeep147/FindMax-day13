@@ -14,4 +14,10 @@ public class TestFindMax {
         assertEquals(7.09f,FindMax.findMaxFloat(new Float[] {6.09f,7.09f,3.0f}));
         assertEquals(7.09f,FindMax.findMaxFloat(new Float[] {6.09f,3.0f,7.09f}));
     }
+    @Test
+    public void testFindMaxString(){
+        assertEquals("Peach",FindMax.findMaxString(new String[] {"Apple","Banana","Peach"}));
+        assertEquals("Peach",FindMax.findMaxString(new String[] {"Apple","Peach","Banana"}));
+        assertEquals("Peach",FindMax.findMaxString(new String[] {"Peach","Apple","Banana"}));
+    }
 }
