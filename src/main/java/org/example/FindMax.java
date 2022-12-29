@@ -20,4 +20,12 @@ public class FindMax {
             }
         return max;
     }
+    public static String findMaxString(String[] arr){
+        String max = "";
+        for(String s : arr)
+            if(max.compareTo(s) < 0){
+                max = s;
+            }
+         return max;
+    }
 }
