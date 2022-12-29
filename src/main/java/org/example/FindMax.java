@@ -1,31 +1,24 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class FindMax {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
     public static Integer findMax(Integer[] arr){
-        Integer max = -38767;
-        for(Integer s : arr)
-         if(max.compareTo(s) < 0){
-             max = s;
-         }
+        Arrays.sort(arr);
+        Integer max = arr[arr.length - 1];
         return max;
     }
     public static Float findMaxFloat(Float[] arr){
-        Float max = -38767f;
-        for(Float s : arr)
-            if(max.compareTo(s) < 0){
-                max = s;
-            }
+        Arrays.sort(arr);
+        Float max = arr[arr.length - 1];
         return max;
     }
     public static String findMaxString(String[] arr){
-        String max = "";
-        for(String s : arr)
-            if(max.compareTo(s) < 0){
-                max = s;
-            }
-         return max;
+        Arrays.sort(arr);
+        String max = arr[arr.length - 1];
+        return max;
     }
 }
